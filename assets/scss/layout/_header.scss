@@ -1,0 +1,12 @@
+@use '../abstracts/mixins' as *;
+.site-header { position: sticky; top: 0; z-index: 20; background: rgba(11, 18, 32, .92); backdrop-filter: blur(8px); }
+.container { @include container; }
+.nav-wrap { display: flex; justify-content: space-between; align-items: center; padding: 1rem 0; }
+.brand { font-size: 1.5rem; font-weight: 800; }
+.main-nav { display: flex; gap: 1rem; align-items: center; }
+.menu-toggle { display: none; }
+@media (max-width: 840px) {
+  .menu-toggle { display: inline-flex; background: transparent; border: 0; color: var(--text); font-size: 1.2rem; }
+  .main-nav { display: none; position: absolute; top: 70px; right: 4%; flex-direction: column; background: var(--surface); padding: 1rem; border-radius: 12px; }
+  .main-nav.open { display: flex; }
+}

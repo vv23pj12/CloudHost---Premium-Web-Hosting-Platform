@@ -1,0 +1,10 @@
+.feature-card, .price-card, .hero-card {
+  background: var(--surface);
+  border: 1px solid rgba(255,255,255,.08);
+  border-radius: 16px;
+  padding: 1.3rem;
+}
+.card-grid { display: grid; gap: 1rem; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); }
+.price-card .price { font-size: 1.8rem; color: var(--secondary); font-weight: 700; margin: .7rem 0; }
+.price-card ul { margin: .8rem 0 1rem; display: grid; gap: .4rem; }
+.price-card.featured { outline: 2px solid var(--primary); }
