@@ -1,0 +1,16 @@
+{
+  "name": "cloudhost-modern-template",
+  "version": "1.0.0",
+  "description": "Modern Web Hosting & WHMCS HTML template using SCSS 7-1 architecture and Gulp",
+  "scripts": {
+    "build": "gulp styles",
+    "watch": "gulp watch"
+  },
+  "devDependencies": {
+    "gulp": "^5.0.0",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-sass": "^5.1.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "sass": "^1.77.8"
+  }
+}
